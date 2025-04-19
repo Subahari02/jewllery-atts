@@ -1,0 +1,60 @@
+/* Dashboard.css */
+
+.dashboard-container {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.dashboard-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Card Container */
+.card.custom-card {
+  border: none;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  padding: 20px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(135deg, #6f42c1, #4e32a8);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.card.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Card Title & Text */
+.card.custom-card h5 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.card.custom-card p {
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin-bottom: 0;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+  .card.custom-card {
+    margin-bottom: 20px;
+  }
+
+  .dashboard-title {
+    font-size: 1.8rem;
+  }
+}

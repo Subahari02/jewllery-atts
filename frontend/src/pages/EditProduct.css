@@ -1,0 +1,111 @@
+/* === Unique Edit Product Form Container === */
+.product-form-container {
+  width: 100%;
+  max-width: 520px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
+}
+
+/* === Heading === */
+h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1e1e2f;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #6f42c1;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* === Form === */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* === Input Fields === */
+input {
+  padding: 14px 16px;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #6f42c1;
+  background-color: #fff;
+  outline: none;
+}
+
+input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* === Button === */
+button {
+  padding: 14px;
+  font-size: 1.05rem;
+  background-color: #6f42c1;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 14px rgba(111, 66, 193, 0.15);
+}
+
+button:hover {
+  background-color: #5a36a4;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* === Error Message === */
+.error {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* === Responsive Tweaks === */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  input {
+    font-size: 0.95rem;
+    padding: 12px 14px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
